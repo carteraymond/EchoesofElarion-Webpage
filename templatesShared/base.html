@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Echoes of Elarion{% endblock %}</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Echoes of Elarion</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/lore/">Lore</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Echoes of Elarion</p>
+    </footer>
+
+</body>
+</html>
