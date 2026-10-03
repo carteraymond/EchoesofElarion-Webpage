@@ -1,3 +1,5 @@
+
+# Lore Entries for the World of Elarion, will later add this to a database and allow for expansion of lore entries through the admin panel
 LORE_ENTRIES = {
     "wells": {
         "title": "The Wells of Elarion",

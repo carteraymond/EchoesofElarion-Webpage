@@ -3,6 +3,7 @@ from django.shortcuts import render,redirect
 # Create your views here.
 
 def home(request):
+    # Redirect new players to the welcome page before showing the campaign.
     if "player_name" not in request.session:
         return redirect("welcome")
     
@@ -19,7 +20,7 @@ def home(request):
     }
 
     return render(request, "campaign/home.html",context)
-
+#This runs only if the player has reached level 2, which is the requirement to access the history page. If they haven't reached level 2, they will be redirected to the home page.
 def history(request):
     level = request.session.get("level",1)
 
@@ -36,11 +37,11 @@ def history(request):
 
     }
     return render(request, "campaign/history.html", context)
-
+#currently no direct link to this page, but it is the first page the player will see when they start the game. It will ask for their name and set their initial stats. Will use Javascript to make the name input field more interactive and fun later.
 def welcome(request):
     if request.method == "POST":
         name = request.POST.get("name")
-
+    # Store the new player's starting information in their session.
         request.session["player_name"] = name
         request.session["xp"] = 0
         request.session["level"] = 1

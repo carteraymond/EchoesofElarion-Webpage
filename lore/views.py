@@ -16,7 +16,7 @@ def home(request):
 
     if selected_topic in LORE_ENTRIES:
         selected_lore = LORE_ENTRIES[selected_topic]
-
+        # Only award XP the first time a player discovers this topic.
         if selected_topic not in explored_lore:
             explored_lore.append(selected_topic)
             request.session["explored_lore"] = explored_lore
