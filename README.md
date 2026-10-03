@@ -43,7 +43,8 @@ The application begins on the Welcome page, where the user enters their adventur
 
 Software Demo
 
-Software Demo Video
+[Software Demo Video](https://youtu.be/3bqb-JTxYu4)
+
 
 # Web Pages
 
