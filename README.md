@@ -1,25 +1,49 @@
-# Overview
+Overview
 
-Echoes of Elarion is an interactive web application built with Django and Python. The application allows users to enter an adventurer name and explore the lore of the fictional world of Elarion. As users discover new pieces of lore, they earn experience points and can eventually level up to unlock additional content.
+Echoes of Elarion is an interactive web application built with Python and Django. The application allows users to enter an adventurer name and explore the lore of the fictional world of Elarion. As users discover new pieces of lore, they earn experience points and can eventually level up to unlock additional content.
 
-To start the test server on a local computer, activate the Python virtual environment and run the Django development server:
+The purpose of this project is to gain practical experience developing web applications with Python and Django. This project demonstrates how Django handles web pages, URL routing, templates, user input, sessions, and dynamically generated content. The application is also designed to be expanded into a larger interactive experience in the future.
 
-```powershell
-.\echoes\Scripts\Activate.ps1
-python manage.py runserver
-```
+How to Run
 
-After starting the server, open the following website in a web browser:
+To run Echoes of Elarion on a local computer, you will need Python installed.
 
-```text
+1. **Clone the Repository**
+
+Clone or download this repository and open a terminal in the project folder.
+
+2. **Create a Virtual Environment**
+
+Create a new Python virtual environment:
+
+    python -m venv .venv
+
+3. **Activate the Virtual Environment**
+
+On Windows PowerShell:
+
+    .\.venv\Scripts\Activate.ps1
+4. **Install the Required Packages**
+
+Install the project's required Python packages using requirements.txt:
+
+    pip install -r requirements.txt
+5. **Start the Django Development Server**
+
+Run the Django development server:
+
+    python manage.py runserver
+6. Open the Application
+
+Open the following address in a web browser:
+
 http://127.0.0.1:8000/
-```
 
 The application begins on the Welcome page, where the user enters their adventurer name before beginning their journey.
 
-The purpose of writing this software is to gain practical experience developing web applications with Python and Django. This project allowed me to learn how Django handles web pages, URL routing, templates, user input, sessions, and dynamically generated content. I also wanted to build an application that could be expanded into a larger interactive experience in the future.
+Software Demo
 
-[Software Demo Video](http://youtube.link.goes.here)
+Software Demo Video
 
 # Web Pages
 
